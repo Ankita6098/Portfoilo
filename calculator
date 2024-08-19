@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <style>
+    .calculator {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 5px groove black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: deepskyblue;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  
+}
+.col{
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: violet;
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  /* border: 1px solid; */
+  margin-left:-8px;
+  margin-top: 2px;
+}
+  </style>
+</head>
+<body>
+  <h1 class="col">Calculator</h1>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="button-grid">
+      <button id="clear">C</button>
+      <button id="backspace">&lt;</button>
+      <button id="divide">/</button>
+      <button id="multiply">*</button>
+      <button id="subtract">-</button>
+      <button id="add">+</button>
+      <button id="equals">=</button>
+      <button id="zero">0</button>
+      <button id="one">1</button>
+      <button id="two">2</button>
+      <button id="three">3</button>
+      <button id="four">4</button>
+      <button id="five">5</button>
+      <button id="six">6</button>
+      <button id="seven">7</button>
+      <button id="eight">8</button>
+      <button id="nine">9</button>
+    </div>
+  </div>
+  <script>
+    const display = document.getElementById('display');
+const buttons = document.querySelectorAll('button');
+
+let currentNumber = '';
+let previousNumber = '';
+let operation = '';
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const value = button.textContent;
+
+    if (value === 'C') {
+      clearDisplay();
+    } else if (value === '&lt;') {
+      backspace();
+    } else if (value === '=') {
+      calculate();
+    } else if (['+', '-', '*', '/'].includes(value)) {
+      operation = value;
+      previousNumber = currentNumber;
+      currentNumber = '';
+    } else {
+      currentNumber += value;
+      display.value = currentNumber;
+    }
+  });
+});
+
+function clearDisplay() {
+  display.value = '';
+  currentNumber = '';
+  previousNumber = '';
+  operation = '';
+}
+
+function backspace() {
+  currentNumber = currentNumber.slice(0, -1);
+  display.value = currentNumber;
+}
+
+function calculate() {
+  const num1 = parseFloat(previousNumber);
+  const num2 = parseFloat(currentNumber);
+  let result;
+
+  switch (operation) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      result = num1 / num2;
+      break;
+    default:
+      result = 0;
+  }
+
+  display.value = result.toString();
+  currentNumber = result.toString();
+  previousNumber = '';
+  operation = '';
+}
+  </script>
+</body>
+</html>
+
