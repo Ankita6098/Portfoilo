@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+        }
+
+        #container1 {
+            /* background-color: lightblue; */
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-indent: 50px;
+            text-align: center;
+            text-align: justify;
+            overflow: scroll;
+            color: white;
+            scrollbar-width: none;
+            height: 70vh;
+            width: 70vw;
+            margin: 100px 240px;
+            border: 1px transparent;
+        }
+
+        #container1:hover {
+            box-shadow: 0px 5px 20px lightgoldenrodyellow;
+        }
+
+        #container2 {
+            /* background-color: yellow; */
+            background-image: url("./guitar-4231782_1280.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        div img {
+            height: 300px;
+            width: 300px;
+            margin: 30px 350px;
+        }
+        img:hover{
+            box-shadow: 0px 0px 10px lightgoldenrodyellow;
+            border-radius: 50%;
+        }
+        h1 {
+            margin-left: 330px;
+        }
+
+        i {
+            margin-left: 330px;
+            font-size: 25px;
+        }
+
+        .child {
+            height: 300px;
+            width: 500px;
+            border: 1px solid;
+            display: inline-block;
+        }
+
+        #child1 {
+            position: relative;
+            top: 20px;
+            left: 60px;
+            font-size: 25px;
+            text-align: justify;
+            overflow: scroll;
+            color: white;
+            scrollbar-width: none;
+            border: none;
+        }
+
+        #child1:hover {
+            box-shadow: 5px 10px 15px whitesmoke ;
+        }
+
+        #child2 {
+            position: relative;
+            top: 350px;
+            right: 60px;
+            font-size: 25px;
+            text-align: justify;
+            overflow: scroll;
+            color: white;
+            scrollbar-width: none;
+            border: none;
+        }
+
+        #child2:hover {
+            box-shadow: 5px 10px 15px lightgoldenrodyellow;
+        }
+
+        #child3 {
+            position: relative;
+            top: 370px;
+            left: 60px;
+            font-size: 25px;
+            text-align: justify;
+            overflow: scroll;
+            color: white;
+            scrollbar-width: none;
+            border: none;
+            /* margin-bottom: 20px; */
+        }
+
+        #child3:hover {
+            box-shadow: 5px 10px 15px whitesmoke;
+        }
+
+        #child4 {
+            height: 30vh;
+            width: 70vw;
+            border: 1px solid transparent;
+            position: relative;
+            top: 60vh;
+            font-size: 25px;
+            text-align: center;
+
+        }
+        #child4 hr{
+            color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container1">
+        <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/01/11/b246e3df7c15e7b6456d13874de912de_original.png" alt="">
+        <br>
+        <h1>LATA MANGESHKAR</h1>
+        <br>
+        <i>28 SEPTEMBER 1929 - 6 FEBRUARY 2022</i><br><br> <br>
+        <div class="child" id="child1">
+            <b>HISTORY:</b> <br>
+            Lata Mangeshkar was born in Indore, Madhya Pradesh, India, on September 28, 1929. Among the five kids of her
+            parents, Lata was the oldest. Her parents' names are Pandit Deenanath Mangeshkar and Shevanti Mangeshkar,
+            respectively. Her father, Master Dinanath, was well-liked and admired Marathi's theatrical character.
+            <br>
+            Lata Mangeshkar was named "Hema" after she was born. In honor of a female character called Latika, her
+            parents changed her name to Lata under one of her father's plays, Bhaaw Bandhan. Asha, Meena, Usha, and
+            Hridaynath are her siblings' names. They're all talented vocalists and guitarists.
+            <br>
+            Her academic background isn't well-known, but she demonstrated that a certificate isn't the only way to earn
+            a respectful living. Her father was the one who gave her initial music training. She began working as an
+            actor in her father's musical productions when she was five.
+        </div>
+        <div class="child" id="child2">
+            <b>GOVERNMENT OF INDIA HONOURS AND AWARDS:</b> <br>
+            1969 - Padma Bhushan <br>
+            1989 - Dadasaheb Phalke Award <br>
+            1999 - Padma Vibhushan <br>
+            2001 - Bharat Ratna <br>
+            2008 - "One Time Award for Lifetime Achievement" honour to commemorate the 60th anniversary of India's
+            Independence <br>
+            <b>Maharashtra State Film Awards</b> <br>
+            1966 - Best Playback Singer for Sadhi Mansa <br>
+            1966 - Best Music Director for Sadhi Mansa (Marathi) under the name 'Anandghan' <br>
+            1977 - Best Playback Singer for Jait Re Jait <br>
+            1997 - Maharashtra Bhushan Award <br>
+            2001 - Maharashtra Ratna (First Recipient) <br>
+            <b>National Film Awards</b> <br>
+            1972 - Best Female Playback Singer for songs of the film Parichay <br>
+            1974 - Best Female Playback Singer for songs of the film Kora Kagaz <br>
+            1990 - Best Female Playback Singer for songs of the film Lekin <br>
+            <b>Filmfare Awards</b> <br>
+            1959 - "Aaja Re Pardesi" from Madhumati <br>
+            1963 - "Kahi Deep Jale Kahi Dil" from Bees Saal Baad <br>
+            1966 - "Tumhi Mere Mandir Tumhi Meri Pooja" from Khandan <br>
+            1970 - "Aap Mujhe Achhe Lagne Lage" from Jeene Ki Raah <br>
+            1993 - Filmfare Lifetime Achievement Award <br>
+            1994 - Filmfare Special Award for "Didi Tera Devar Deewana" from Hum Aapke Hain Koun..! <br>
+            2004 - Filmfare Special Award where a golden trophy was presented on the occasion of Filmfare Awards
+            completing 50 years <br>
+            <b>Bengal Film Journalists' Association Awards</b> <br>
+            1964 - for Woh Kaun Thi? <br>
+            1967 - for Milan <br>
+            1968 - for Raja Aur Runk <br>
+            1969 - for Saraswatichandra <br>
+            1970 - for Do Raaste <br>
+            1971 - for Tere Mere Sapne <br>
+            1972 - for Pakeezah <br>
+            1973 - for Bon Palashir Padabali (Bengali film) <br>
+            1973 - for Abhimaan <br>
+            1975 - for Kora Kagaz <br>
+            1981 - for Ek Duuje Ke Liye <br>
+            1983 - for A Portrait Of Lataji <br>
+            1985 - for Ram Teri Ganga Maili <br>
+            1987 - for Amarsangee (Bengali film) <br>
+            1991 - for Lekin... <br>
+
+
+        </div>
+        <div class="child" id="child3">
+            <b>SONGS</b> <br>
+            Janani janambhooh mi... Tum maa ho badi maa <br>
+            Mata tere charnon men <br>
+            Chidiya bole choon choon maina bole hoon <br>
+            Pyare bapu ki <br>
+            Main khili khili phulvari <br>
+            Piya aayega gori shudh na bisaar <br>
+            Sanwariya o basuriya o bajaai gayo re <br>
+            Ab kaun sunega mere man ki baat <br>
+            Ek naye rang men duje umang men <br>
+            Chalo Ho Gayi Taiyar <br>
+            Paa laguu kar joda jodi hori shyam mose na <br>
+            Jawani ki rel chali <br>
+            Main to naacho chhama chham naach re <br>
+        </div>
+        <div class="child" id="child4">
+            <hr>
+            <br> <br>
+            "There is nothing in this world more real than death. !
+            The most expensive branded car in the world stands in my garage. But I get taken in a wheelchair.!
+            All kinds of designs and colors in this world, expensive clothes, expensive shoes, expensive products are
+            all in my house. But I'm in the small gown provided by the hospital.!
+            I have a lot of money in my bank account but nothing is of use to me. !!"
+        </div>
+    </div>
+    <div class="container" id="container2"></div>
+</body>
+
+</html>
